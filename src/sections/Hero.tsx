@@ -5,7 +5,7 @@ import { Download, Linkedin, Github, Mail } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export const Hero = () => {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
 
     return (
         <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-gradient-to-b from-background via-background to-surface/20">
@@ -34,7 +34,17 @@ export const Hero = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-4 mb-10 print:hidden">
-                        <Button variant="outline" className="flex items-center gap-2" onClick={() => window.print()}>
+                        <Button
+                            variant="outline"
+                            className="flex items-center gap-2"
+                            onClick={() => {
+                                const lng = i18n.language.startsWith('ru') ? 'ru' : 'en';
+                                const link = document.createElement('a');
+                                link.href = `/cv/resume-${lng}.pdf`;
+                                link.download = `Resume-Piterimov-Roman-${lng.toUpperCase()}.pdf`;
+                                link.click();
+                            }}
+                        >
                             <Download size={20} /> {t('hero.download_cv')}
                         </Button>
                     </div>
