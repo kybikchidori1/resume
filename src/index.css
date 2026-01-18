@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/inter/700.css";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+}
+
+:root {
+  /* Light Mode Defaults */
+  --background: #FFFFFF;
+  --surface: #F3F4F6;
+  --primary: #6C5CE7;
+  --secondary: #FFC857;
+  --text-main: #111827;
+  --text-muted: #6B7280;
+}
+
+:root.dark {
+  /* Dark Mode Overrides */
+  --background: #0F0F0F;
+  --surface: #1A1A1A;
+  --primary: #6C5CE7;
+  --secondary: #FFC857;
+  --text-main: #FFFFFF;
+  --text-muted: #A0A0A0;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-main font-sans antialiased transition-colors duration-300;
+  }
+}
+
+@media print {
+  @page {
+    margin: 10mm;
+    size: auto;
+  }
+
+  /* Reset Colors for Paper */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Hide Navigation, Buttons, Background Effects */
+  header,
+  .print\:hidden,
+  button,
+  [class*="absolute"]
+
+  /* Hide background blobs */
+    {
+    display: none !important;
+  }
+
+  /* Ensure text is visible and layout flows */
+  section {
+    padding-top: 10mm !important;
+    padding-bottom: 5mm !important;
+    min-height: auto !important;
+  }
+
+  /* Styles for Resume layout */
+  h1,
+  h2,
+  h3 {
+    color: black !important;
+  }
+
+  p,
+  span,
+  div {
+    color: #333 !important;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black !important;
+  }
+}

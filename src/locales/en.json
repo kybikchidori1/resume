@@ -1,0 +1,73 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "hire_me": "Hire Me"
+    },
+    "hero": {
+        "hello": "HELLO, I'M",
+        "name_first": "Piterimov",
+        "name_last": "Roman",
+        "role": "Senior Frontend Developer",
+        "bio": "Experienced developer specializing in high-load scalable web applications. Expert in the React ecosystem, performance optimization, and architectural design. Proven track record in banking and enterprise sectors.",
+        "download_cv": "Save as PDF"
+    },
+    "experience": {
+        "title": "Work Experience",
+        "subtitle": "My Career",
+        "achievements": "Achievements:",
+        "sber_role": "Senior Frontend Developer",
+        "sber_period": "May 2023 — Present",
+        "sber_desc": "Leading frontend development for analytical dashboards in the largest digital banking platform.",
+        "sber_achievements": [
+            "Designed scalable architecture (20+ modules) for a business app from scratch.",
+            "Led a team of 5 developers, delivering the product in 6 months.",
+            "Reduced FCP by 40% and bundle size by 35% via lazy-loading and code-splitting.",
+            "Implemented virtualization for heavy tables (10,000+ rows), achieving <100ms response.",
+            "Optimized backend requests by 60% using RTK Query and state normalization."
+        ],
+        "omega_role": "Senior Frontend Developer",
+        "omega_period": "July 2022 — May 2023",
+        "omega_desc": "Developed systems for government and education sectors.",
+        "omega_achievements": [
+            "Developed a GrapesJS-based constructor, speeding up landing page creation by 5x.",
+            "Created a dynamic navigation widget, improving page depth by 15%.",
+            "Built a control panel from scratch, automating 80% of manual configs.",
+            "Created a Knowledge Base (100+ articles), reducing onboarding time from 2 weeks to 4 days."
+        ],
+        "netgroup_role": "Frontend Developer",
+        "netgroup_period": "Oct 2019 — Mar 2022",
+        "netgroup_desc": "Web resource and payment system development.",
+        "netgroup_achievements": [
+            "Implemented UI-kit (30+ components), speeding up build time by 40%.",
+            "Refactored legacy code, improving rendering speed by 20%.",
+            "Launched 10+ landing pages with PageSpeed 90+ scores."
+        ]
+    },
+    "skills": {
+        "title": "Technical Skills",
+        "subtitle": "Expertise",
+        "cat_arch": "Architecture",
+        "cat_fe": "Frontend Stack",
+        "cat_state": "State & Data",
+        "cat_testing": "Testing & QA",
+        "cat_tools": "Tools & DevOps",
+        "cat_methods": "Methodologies"
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "Contact Me",
+        "desc": "Open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        "location": "Moscow / Remote",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send Message"
+        }
+    }
+}
